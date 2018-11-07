@@ -1,0 +1,50 @@
+.dev-addons {
+  display: flex;
+  width: 350px;
+  background-color: #fff;
+  box-shadow: 10px 10px 36px 0px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 20px;
+  left: 100%;
+}
+
+.dev-addons b:first-child {
+  display: inline-block;
+  width: 100%;
+}
+
+.dev-addons span {
+  margin-top: 10%;
+  text-align: center;
+}
+
+.dev-addons .close {
+  padding: 5%;
+  cursor: pointer;
+  font-family: sans-serif;
+}
+
+.phoneImg {
+  width: 100px;
+  height: 100px;
+}
+
+.exit {
+  animation: 2s close forwards;
+}
+
+.showBoxCalled {
+  animation: 2s showBoxCalled forwards;
+}
+
+@keyframes close {
+  to {
+    transform: translateX(105%);
+  }
+}
+
+@keyframes showBoxCalled {
+  100% {
+    transform: translateX(-105%);
+  }
+}
